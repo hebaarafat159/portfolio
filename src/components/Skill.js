@@ -4,7 +4,10 @@ import { Typography, Card, Stack, Box } from '@mui/joy';
 
 export default function Skill({ skill }) {
     return (
-        <Card sx={{ maxWidth: '20vh'}}>
+        <Card
+            size="lg"
+            sx={{ width: 'auto', height: 'auto', '&:hover': { boxShadow: 'md' } }}>
+
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1.5 }}>
                 <Stack direction="row" spacing={1}>
                     <Stack direction="column" spacing={1}>

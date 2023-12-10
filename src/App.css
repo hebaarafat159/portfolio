@@ -49,3 +49,11 @@
     transform: rotate(360deg);
   }
 }
+
+.Footer {
+  bottom: 0;
+  width: 100vw;
+  height: 8vmin;
+  display: flex;
+  align-items: center;
+}
