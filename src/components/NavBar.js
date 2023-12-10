@@ -23,11 +23,11 @@ export default function NavBar() {
                 }
             ]}>
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1.5 }}>
-                <img src={'profile_img.jpeg'} loading="lazy" alt="" width={50} height={50} />
+               <Link href="/" style={{ textDecoration: 'none' }}>Heba Arafat</Link>
             </Box>
 
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1.5 }}>
-                <Link href="/" style={{ textDecoration: 'none' }}>About</Link>
+                <Link href="/about" style={{ textDecoration: 'none' }}>About</Link>
                 <Link href="/skills" style={{ textDecoration: 'none' }}>Skills</Link>
                 <Link href="/projects" style={{ textDecoration: 'none' }}>Projects</Link>
             </Box>
