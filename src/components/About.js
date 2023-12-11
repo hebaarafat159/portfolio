@@ -3,17 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
     return (
-        <Box component="main"
-            sx={{
-                py: 2,
-                pb: 5,
-                display: 'flex',
-                justifyItems: 'center',
-                alignItems: 'center',
-                height: '70vh',
-                width: '70vw'
-            }}>
-
+        <Box style={{ display: 'flex', flexFlow: 'row wrap', gap: '4vmin', margin: '20vmin' }} size="lg" sx={{ width: 'auto', height: 'auto', '&:hover': { boxShadow: 'md' } }}>
             <Stack
                 direction="column"
                 spacing={2}
