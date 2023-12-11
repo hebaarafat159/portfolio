@@ -56,3 +56,22 @@
   width: 30vmin;
   height: 30vmin;
 }
+
+.ProjectList .card-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.ProjectList .accordion-summary {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2vmin;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
+
+.ProjectList .accordion-summary span {
+  flex-basis: 100%;
+}
