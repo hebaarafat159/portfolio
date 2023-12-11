@@ -20,8 +20,9 @@ export default function Project({ project }) {
               Technologies: {project.skills}
             </Typography>
             <Stack direction="row" spacing={2}>
-              <Button variant="outlined" color="primary">View Project</Button>
-              <Button variant="outlined" color="primary">View GitHub</Button>
+              {project.projectLink ? <Button variant="outlined" color="primary" component='a' href={project.projectLink}>View Project</Button> : null}
+              {project.frontendGitHub ? <Button variant="outlined" color="primary" component='a' href={project.frontendGitHub}>View GitHub</Button> : null}
+              {project.backendGitHub ? <Button variant="outlined" color="primary" component='a' href={project.backendGitHub}>View Backend GitHub</Button> : null}
             </Stack>
           </Stack>
         </Stack>
