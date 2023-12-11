@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <Box style={{ display: 'flex', flexFlow: 'row wrap', gap: '4vmin', margin: '20vmin' }} size="lg" sx={{ width: 'auto', height: 'auto', '&:hover': { boxShadow: 'md' } }}>
             <Stack direction="row" spacing={2}>
-                <img src={'profile_img.jpeg'} loading="lazy" alt="" width={200} height={200} />
+                <img src={'profile_img.jpeg'} className='profileImage' loading="lazy" alt="" width={200} height={200} />
                 <Stack spacing={1} sx={{ display: 'flex', flexFlow: 'column wrap', gap: '4vmin', padding: '5vmin' }}>
                     <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw' }}> Heba Arafat </Typography>
                     <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw' }}>

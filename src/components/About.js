@@ -13,7 +13,7 @@ export default function About() {
                 <Stack direction="row" spacing={2}>
                     {/* display user avatar image */}
                     <Stack direction="column" spacing={1}>
-                        <img src={'profile_img.jpeg'} loading="lazy" alt="" width={200} height={200} />
+                        <img src={'profile_img.jpeg'}  className='profileImage' loading="lazy" alt="" />
                     </Stack>
                     {/* display user profile details*/}
                     <Stack spacing={1} sx={{ flexGrow: 1 }}>
