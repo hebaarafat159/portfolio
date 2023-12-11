@@ -1,21 +1,17 @@
-import { Stack, Box } from '@mui/joy'
+import { Stack, Card } from '@mui/joy'
 import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
     return (
-        <Box style={{ display: 'flex', flexFlow: 'row wrap', gap: '4vmin', margin: '20vmin' }} size="lg" sx={{ width: 'auto', height: 'auto', '&:hover': { boxShadow: 'md' } }}>
+        <Card >
             <Stack
                 direction="column"
                 spacing={2}
-
-                sx={{ display: { xs: 'flex' }, }}>
-
+                sx={{ display: { xs: 'flex' }, my: 1 }}>
                 <Stack direction="row" spacing={2}>
-                    {/* display user avatar image */}
                     <Stack direction="column" spacing={1}>
-                        <img src={'profile_img.jpeg'}  className='profileImage' loading="lazy" alt="" />
+                        <img src={'profile_img.jpeg'} className='profileImage' loading="lazy" alt="" />
                     </Stack>
-                    {/* display user profile details*/}
                     <Stack spacing={1} sx={{ flexGrow: 1 }}>
                         <TypeAnimation
                             sequence={[
@@ -29,6 +25,6 @@ export default function About() {
                     </Stack>
                 </Stack>
             </Stack>
-        </Box>
+        </Card>
     );
 }
