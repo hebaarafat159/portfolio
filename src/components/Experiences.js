@@ -1,4 +1,4 @@
-import { List, Divider, Typography, Box, Chip, ListItemDecorator, ListItemContent, ListItem } from "@mui/joy";
+import { List, Divider, Typography, Box, Chip, ListItemDecorator, ListItemContent, ListItem, Avatar } from "@mui/joy";
 export default function Experiences() {
     const experiences = [
         {
@@ -8,7 +8,8 @@ export default function Experiences() {
             role: 'Student, Software Engineering Immersive',
             duration: 'September 2023 - November 2023',
             description: 'A 3-month full-time bootcamp taken remotely using Zoom and Slack. It consisted of daily standups, lectures, workshops, homework and final projects. Covered the fundamentals of web development from frontend to backend.',
-            skills: []
+            skills: [],
+            logo: ''
         },
         {
             id: 2,
@@ -17,7 +18,8 @@ export default function Experiences() {
             role: 'Freelance Android Software Developer',
             duration: 'Apr 2016 - May 2016 ',
             description: '',
-            skills: []
+            skills: [],
+            logo: ''
         },
         {
             id: 3,
@@ -26,7 +28,8 @@ export default function Experiences() {
             role: 'Senior Software Developer',
             duration: 'Jan 2015 - Apr 2016',
             description: '',
-            skills: []
+            skills: [],
+            logo: ''
         },
         {
             id: 4,
@@ -35,7 +38,8 @@ export default function Experiences() {
             role: 'Freelance Android Software Developer',
             duration: 'Oct 2014 - Jan 2015',
             description: '',
-            skills: []
+            skills: [],
+            logo: ''
         },
         {
             id: 5,
@@ -44,7 +48,8 @@ export default function Experiences() {
             role: 'Android Senior Software Developer',
             duration: 'Dec 2012 - Mar 2014',
             description: '',
-            skills: []
+            skills: [],
+            logo: ''
         },
         {
             id: 6,
@@ -53,7 +58,8 @@ export default function Experiences() {
             role: 'Android Software Developer',
             duration: 'Jul 2010 - Dec 2012',
             description: '',
-            skills: []
+            skills: [],
+            logo: ''
         },
     ]
     return (
@@ -68,16 +74,16 @@ export default function Experiences() {
                                         content: '""',
                                         position: 'absolute',
                                         height: '100%',
-                                        width: '2px',
+                                        width: '.2vmin',
                                         bgcolor: 'divider',
-                                        left: 'calc(var(--ListItem-paddingLeft) + 20px)',
-                                        top: '50%',
+                                        left: 'calc(var(--ListItem-paddingLeft) + 2vmin)',
+                                        top: '40%',
                                     },
                                 }}>
-                                {/* <Avatar
-                                    src={company.logo}
-                                    sx={{ '--Avatar-size': '24px' }}
-                                /> */}
+                                <Avatar
+                                    src={experience.logo ? experience.logo : 'buildings.png'}
+                                    sx={{ '--Avatar-size': '4vmin' }}
+                                />
                             </ListItemDecorator>
                             <ListItemContent>
                                 <Typography level="title-sm">{experience.role}</Typography>
@@ -85,7 +91,7 @@ export default function Experiences() {
                                 <Typography level="body-xs">{experience.description}</Typography>
                             </ListItemContent>
                             <Typography level="body-xs">{experience.duration}</Typography>
-                            
+
                         </ListItem>
                         {experience.skills && experience.skills.length > 0 ?
                             <>
@@ -97,8 +103,7 @@ export default function Experiences() {
                                             key={skillIndex}
                                             variant="outlined"
                                             color="neutral"
-                                            size="sm"
-                                        >
+                                            size="sm">
                                             {skill}
                                         </Chip>
                                     ))}
