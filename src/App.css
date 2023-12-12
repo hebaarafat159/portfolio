@@ -40,9 +40,19 @@
   }
 }
 
-.Footer,
-.Header {
+.Footer{
+  position: fixed; /* or use 'absolute' if it suits your layout better */
   bottom: 0;
+  width: 100%;
+  height: 8vmin;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #1F85DE;
+  color: white;
+  padding: .5vmin;
+}
+.Header {
   width: 100vw;
   height: 8vmin;
   display: flex;
