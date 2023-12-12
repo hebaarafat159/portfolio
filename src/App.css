@@ -41,7 +41,7 @@
 }
 
 .Footer{
-  position: fixed; /* or use 'absolute' if it suits your layout better */
+  position: fixed;
   bottom: 0;
   width: 100%;
    height: 8vmin;
