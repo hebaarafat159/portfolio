@@ -61,26 +61,25 @@ export default function ProjectList() {
   ];
 
   return (
-    <div className="ProjectList">
-      <Card>
-        <div className="card-header">
-          <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw', color: '#1F85DE' }}> Projects </Typography>
-        </div>
-        <AccordionGroup>
-          {projects && projects.map(project => (
-            <Accordion key={project.id}>
-              <AccordionSummary>
-                <div className="accordion-summary">
-                  <span  style={{ fontSize: '1.3vw' }}>{project.title}</span>
-                </div>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Project project={project} />
-              </AccordionDetails>
-            </Accordion>
-          ))}
-        </AccordionGroup>
-      </Card>
-    </div>
+    <Card style={{ display: 'flex', flexFlow: 'row wrap', gap: '4vmin', margin: '5vmin' }} size="lg" sx={{ width: 'auto', height: 'auto', '&:hover': { boxShadow: 'md' } }}>
+
+      <div className="card-header">
+        <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw', color: '#1F85DE' }}> Projects </Typography>
+      </div>
+      <AccordionGroup>
+        {projects && projects.map(project => (
+          <Accordion key={project.id}>
+            <AccordionSummary>
+              <div className="accordion-summary">
+                <span style={{ fontSize: '1.3vw' }}>{project.title}</span>
+              </div>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Project project={project} />
+            </AccordionDetails>
+          </Accordion>
+        ))}
+      </AccordionGroup>
+    </Card>
   );
 };

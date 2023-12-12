@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
     return (
-        <Card >
+        <Card style={{ display: 'flex', flexFlow: 'row wrap', gap: '4vmin', margin: '5vmin' }} size="lg" sx={{ width: 'auto', height: 'auto', '&:hover': { boxShadow: 'md' } }}>
             <Stack
                 direction="column"
                 spacing={2}
