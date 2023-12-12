@@ -14,7 +14,7 @@ export default function Home() {
                         <img src={'profile_img.jpeg'} className='profileImage' loading="lazy" alt="" />
                     </Stack>
                     <Stack spacing={1} sx={{ flexGrow: 1 }}>
-                        <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw' }}> Heba Arafat </Typography>
+                        <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw', color: '#1F85DE' }}> Heba Arafat </Typography>
                         <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw' }}>
                             I'm a  <TypeAnimation
                                 sequence={[
@@ -38,7 +38,7 @@ export default function Home() {
                 spacing={2}
                 sx={{ display: { xs: 'flex' }, my: 1 }}>
                 <Stack spacing={1} sx={{ flexGrow: 1 }}>
-                    <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw' }}> Experiences </Typography>
+                    <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw', color: '#1F85DE' }}> Experiences </Typography>
                     <Experiences />
                 </Stack>
             </Stack>

@@ -40,7 +40,8 @@
   }
 }
 
-.Footer, .Header{
+.Footer,
+.Header {
   bottom: 0;
   width: 100vw;
   height: 8vmin;
@@ -74,8 +75,12 @@
 
 .ProjectList .accordion-summary span {
   flex-basis: 100%;
+  color: #767774;
+  font-size: 1.5vm;
+  font-weight: bold;
 }
 
-.link{
-  color: white;
+.sectionHeader {
+  color: #1F85DE;
+  font-size: '1.5vw';
 }

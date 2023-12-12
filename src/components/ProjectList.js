@@ -64,14 +64,14 @@ export default function ProjectList() {
     <div className="ProjectList">
       <Card>
         <div className="card-header">
-          <Typography component="h1" variant="h5">Projects</Typography>
+          <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw', color: '#1F85DE' }}> Projects </Typography>
         </div>
         <AccordionGroup>
           {projects && projects.map(project => (
             <Accordion key={project.id}>
               <AccordionSummary>
                 <div className="accordion-summary">
-                  <span>{project.title}</span>
+                  <span  style={{ fontSize: '1.3vw' }}>{project.title}</span>
                 </div>
               </AccordionSummary>
               <AccordionDetails>
