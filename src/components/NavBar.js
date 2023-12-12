@@ -17,13 +17,13 @@ export default function NavBar() {
                     top: 0
                 }
             ]}>
-            
+
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1.5 }}>
-               <Link color='white' href="/" style={{ textDecoration: 'none' }}>Heba Arafat</Link>
+                <Link color='white' fontWeight='bold' href="/" style={{ textDecoration: 'none', fontSize: '2vw' }}>Heba Arafat</Link>
             </Box>
 
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1.5 }}>
-                <Link color='white' href="/about" style={{ textDecoration: 'none' }}>About</Link>
+                <Link color='white'  href="/about" style={{ textDecoration: 'none' }}>About</Link>
                 <Link color='white' href="/skills" style={{ textDecoration: 'none' }}>Skills</Link>
                 <Link color='white' href="/projects" style={{ textDecoration: 'none' }}>Projects</Link>
             </Box>

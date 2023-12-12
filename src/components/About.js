@@ -19,7 +19,7 @@ export default function About() {
                                 1000
                             ]}
                             speed={30}
-                            style={{ fontSize: '1.5vw' }}
+                            style={{ fontSize: '1.5vw', color: '#767774' }}
                             repeat={Infinity}
                         />
                     </Stack>

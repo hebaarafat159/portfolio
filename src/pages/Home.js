@@ -15,7 +15,7 @@ export default function Home() {
                     </Stack>
                     <Stack spacing={1} sx={{ flexGrow: 1 }}>
                         <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw', color: '#1F85DE' }}> Heba Arafat </Typography>
-                        <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw' }}>
+                        <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw', color: '#767774' }}>
                             I'm a  <TypeAnimation
                                 sequence={[
                                     'Junior Software Engineer',
@@ -26,7 +26,7 @@ export default function Home() {
                                     1000,
                                 ]}
                                 speed={30}
-                                style={{ fontSize: '2vw' }}
+                                style={{ fontSize: '2vw', color: '#767774' }}
                                 repeat={Infinity}
                             />
                         </Typography>
