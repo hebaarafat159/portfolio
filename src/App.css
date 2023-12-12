@@ -19,7 +19,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -28,31 +28,31 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.Footer {
+.Footer, .Header{
   bottom: 0;
   width: 100vw;
   height: 8vmin;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  background-color: #1F85DE;
+  color: white;
+  padding: .5vmin;
 }
 
-.profileImage{
+.profileImage {
   width: 30vmin;
   height: 30vmin;
 }
@@ -74,4 +74,8 @@
 
 .ProjectList .accordion-summary span {
   flex-basis: 100%;
+}
+
+.link{
+  color: white;
 }
