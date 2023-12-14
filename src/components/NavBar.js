@@ -7,23 +7,21 @@ export default function NavBar() {
             className="Header"
             sx={[
                 {
-                    gap: 2,
                     display: 'flex',
                     flexDirection: 'row',
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     borderBottom: '1px solid',
-                    borderColor: 'divider',
-                    top: 0
+                    borderColor: 'divider'
                 }
             ]}>
 
-            <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1.5 }}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1.5, paddingLeft: '3vmin' }}>
                 <Link color='white' fontWeight='bold' href="/" style={{ textDecoration: 'none', fontSize: '2vw' }}>Heba Arafat</Link>
             </Box>
 
-            <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1.5 }}>
-                <Link color='white'  href="/about" style={{ textDecoration: 'none' }}>About</Link>
+            <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1.5, paddingRight: '3vmin' }}>
+                <Link color='white' href="/about" style={{ textDecoration: 'none' }}>About</Link>
                 <Link color='white' href="/skills" style={{ textDecoration: 'none' }}>Skills</Link>
                 <Link color='white' href="/projects" style={{ textDecoration: 'none' }}>Projects</Link>
             </Box>
