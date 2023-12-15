@@ -36,7 +36,7 @@ export default function About() {
                         />
 
                         {/* Add Interests   */}
-                        <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw', color: '#1F85DE' }}> interests </Typography>
+                        <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw', color: '#1F85DE' }}> Interests </Typography>
                         <div style={{ display: 'flex', flexFlow: 'row wrap', gap: '4vmin' }}>
                             {interests.map((interest, index) => (
                                 <Stack spacing={1} sx={{ flexGrow: 1 }}>
