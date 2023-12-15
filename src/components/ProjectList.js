@@ -4,7 +4,18 @@ import Project from './Project';
 export default function ProjectList() {
   const projects = [
     {
-      id: 1,
+      id: 6,
+      title: 'Boorow A Book',
+      description: 'A General Assembly Projects (project-04-SEI-75)\nA book-sharing web application that is designed to facilitate the exchange, lending, or sharing of books among users. The primary goal of such an application is to connect book enthusiasts and encourage a sense of community around reading.The application houses an extensive book catalog, featuring details such as title, author, publication date, and a brief synopsis. Users have the ability to explore and search the catalog to find books aligned with their interests. Additionally, users can generate listings for books they own and are open to sharing or lending. These listings provide information on the book\'s condition, availability, and any special notes contributed by the owner. Borrowing requests can be sent between users, and owners retain the option to accept or decline based on their availability and preferences. The potential implementation of a booking system allows for efficient management of borrowing periods. To keep users informed and engaged, the platform sends notifications regarding incoming requests, approved requests, and timely reminders about return dates.',
+      skills: 'Django, Postgres, Django Rest Framework, React.js and Mui react component library.',
+      image: 'https://drive.google.com/thumbnail?id=17WhUzrbdqe3aKnYXnub8puYrBBq7OVLj',
+      duration: '7 days',
+      projectLink: 'https://sei-75-unit-4-project-frontend-production.up.railway.app/login',
+      frontendGitHub: 'https://github.com/hebaarafat159/SEI-75-unit-4-project-frontend.git',
+      backendGitHub: 'https://github.com/hebaarafat159/SEI-75-unit-4-project-backend.git'
+    },
+    {
+      id: 5,
       title: 'Venturo',
       description: 'A General Assembly Projects (project-03-SEI-75)\n Our venture is a blogging platform centered around travel experiences. Users can upload blogs dedicated to specific travel destinations, complete with the capability to include photos that can be edited or deleted as needed. Each blog will be associated with locations and collections, allowing the platform to categorize related content together. We plan to integrate Google Places Autocomplete to obtain accurate location data for each blog post, incorporating additional features such as weather updates and, potentially, information on accommodations or flights. Admin users will have the privilege of creating locations and collections, complete with photos and summaries, to be utilized as headers.',
       skills: 'Nextjs , MongoDB and Mui react component library',
@@ -15,7 +26,7 @@ export default function ProjectList() {
       backendGitHub: ''
     },
     {
-      id: 2,
+      id: 4,
       title: 'Hatly',
       description: 'A General Assembly Projects (project-02-SEI-75)\n  A Full-stack CRUD application enabling users to identify and add missing grocery items to a personalized list. This list can be easily shared with family and friends. This application facilitates convenient grocery shopping, ensuring users avoid forgetting items during supermarket visits. Users can create a list of their grocery items, mark purchased items, and share the list with family members or friends.',
       skills: 'Node.js, Express, Vue.js, and MongoDB',
@@ -37,7 +48,7 @@ export default function ProjectList() {
       backendGitHub: ''
     },
     {
-      id: 4,
+      id: 2,
       title: 'LDM Laboratory Data Manager ',
       description: 'This application is a fully featured and robust laboratory information system (LIS) covering all functional areas of the multi-specialty medical laboratory. LDM helps  medical professionals to provide better patient care, increase patients’ safety, increase overall efficiency, reduce operating costs, and increase profitability.',
       skills: 'Titanium, SQLite',
@@ -48,7 +59,7 @@ export default function ProjectList() {
       backendGitHub: ''
     },
     {
-      id: 5,
+      id: 1,
       title: 'XMS',
       description: 'A messaging application where users could send images with handwritten messages. My responsibilities included resolving application issues and developing new features.',
       skills: 'Android (Java), SQLite',
