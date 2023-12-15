@@ -1,7 +1,19 @@
-import { Stack, Card } from '@mui/joy'
+import { Stack, Card, Typography } from '@mui/joy'
 import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
+
+    const interests = [
+        {
+            name: 'Reading Books',
+            comment: 'Especially mysterious stories, and life-coaching.'
+        },
+        {
+            name: 'Watching TV Shows',
+            comment: 'Especially cooking competition shows.'
+        }
+    ]
+
     return (
         <Card style={{ display: 'flex', flexFlow: 'row wrap', gap: '4vmin', margin: '5vmin' }} size="lg" sx={{ width: 'auto', height: 'auto', '&:hover': { boxShadow: 'md' } }}>
             <Stack
@@ -22,6 +34,17 @@ export default function About() {
                             style={{ fontSize: '1.5vw', color: '#767774' }}
                             repeat={Infinity}
                         />
+
+                        {/* Add Interests   */}
+                        <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw', color: '#1F85DE' }}> interests </Typography>
+                        <div style={{ display: 'flex', flexFlow: 'row wrap', gap: '4vmin' }}>
+                            {interests.map((interest, index) => (
+                                <Stack spacing={1} sx={{ flexGrow: 1 }}>
+                                    <Typography component="h1" variant="h1" style={{ fontSize: '1.5vw' }}> {interest.name} </Typography>
+                                    <Typography component="h2" variant="h2" style={{ fontSize: '1vw' }}> {interest.comment} </Typography>
+                                </Stack>
+                            ))}
+                        </div>
                     </Stack>
                 </Stack>
             </Stack>
